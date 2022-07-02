@@ -1,0 +1,10 @@
+{
+  "officers": [{
+    "nameAndEmail": "Joe Palala <jose.palala@live.com>"
+  }, {
+    "nameAndEmail": "Jay Are Galinada <jayaregalinada@gmail.com>"
+  }, {
+    "nameAndEmail": "Michael Lance <catch2t8@yahoo.com.ph>"
+  }],
+  "partners": ["AWS SIKLAB"]
+}
