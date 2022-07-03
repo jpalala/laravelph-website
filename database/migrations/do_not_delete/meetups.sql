@@ -1,3 +1,4 @@
+-- DO NOT DELETE THIS FILE TO CREATE THE MEETUPS TABLE
 -- MySQL dump 10.19  Distrib 10.3.34-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: laravelph_prod
