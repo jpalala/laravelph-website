@@ -14,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome_to_laravelph');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+# Route::get('/testemail', App\Http\Controllers\EmailtestController::class)->name('test-email');
+
+Route::get('/team-reg', [App\Http\Controllers\TeamRegController::class, 'register'])->name('team-reg');
+
+Route::post('/team-reg/create', [App\Http\Controllers\TeamRegController::class, 'create'])->name('register');

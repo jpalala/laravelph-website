@@ -23,7 +23,8 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
-
+    /* Disable Registration from .env*/ 
+    protected $allowRegistration = false;
     /**
      * Where to redirect users after registration.
      *
@@ -64,10 +65,16 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+	    if(!isset($_ENV['allow_registration']) || $_ENV['allow_registration'] == false) {
+		    $createUser =  false; 
+	    }
+	    if($createUser !== false ) {
+              return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+              ]);
+	    } 
+	    return "Sorry registration is currently closed";
     }
 }
