@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+	Readerstacks\QueryMigration\QueryMigrationServiceProvider::class,
 
         /*
          * Application Service Providers...
