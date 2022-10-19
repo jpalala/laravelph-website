@@ -68,7 +68,7 @@
 
             <div class="container">
                 <div class="col-xs-12 lex justify-center pt-8 sm:justify-start sm:pt-0">
-				<p>LaravelPH is a community of laravel enthusiasts!</p>
+				<p>LaravelPH is a community of laravel enthusiasts! Join us on our <a href="https://www.facebook.com/groups/185448994945295">facebook group</a>!</p>
                 </div>
 
 
