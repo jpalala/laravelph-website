@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2B7FM57XC9"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2B7FM57XC9');
+</script>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,10 +21,7 @@
 
         <!-- Styles -->
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link href="css/agency.css" rel="stylesheet" type="text/css" />
-
-       <style>
-       </style>
+	<link href="css/agency.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body id="page-top">

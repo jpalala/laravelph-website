@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "569c32a153ccdeb6884453c08bb8c817",
+    "content-hash": "dc4095e819085db07bcd709ed43b9650",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -4583,6 +4583,50 @@
                 }
             ],
             "time": "2020-12-13T05:41:31+00:00"
+        },
+        {
+            "name": "readerstacks/querymigration",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Readerstacks/laravel_query_migration.git",
+                "reference": "23eb22f9957033b52b9bfa176458c7da6f7a6cb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Readerstacks/laravel_query_migration/zipball/23eb22f9957033b52b9bfa176458c7da6f7a6cb4",
+                "reference": "23eb22f9957033b52b9bfa176458c7da6f7a6cb4",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Readerstacks\\QueryMigration\\QueryMigrationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Readerstacks\\QueryMigration\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "readerstacks",
+                    "email": "info@readerstacks.com"
+                }
+            ],
+            "description": "Migrate custom raw query",
+            "support": {
+                "issues": "https://github.com/Readerstacks/laravel_query_migration/issues",
+                "source": "https://github.com/Readerstacks/laravel_query_migration/tree/1.1.5"
+            },
+            "time": "2022-02-03T13:23:37+00:00"
         },
         {
             "name": "spatie/laravel-activitylog",
