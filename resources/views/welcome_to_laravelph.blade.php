@@ -11,6 +11,7 @@
         </script>
 	<meta charset="utf-8">
 	<meta name="description" content="LaravelPH is a community of Laravel Developers (Artisans) from the Philipines ">
+	<meta name="author" content="Joe">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LaravelPH: Home </title>
         <!-- Fonts -->
