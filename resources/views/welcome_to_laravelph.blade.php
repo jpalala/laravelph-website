@@ -20,12 +20,6 @@
 	<style>
 svg { width: 128px; height: 128px; fill: rgb(30,30,30); }
 	</style>
-<script>
-var hello = @php echo "'"; echo json_encode(array( 'test' => 'some shit')); echo "';";  @endphp
-console.log(hello);
-var hellotest = JSON.parse(hello);
-console.log(hellotest.test);
-</script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
