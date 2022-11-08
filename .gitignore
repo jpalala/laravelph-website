@@ -24,3 +24,4 @@ public/js/**
 public/build/*
 bootcamp/
 ph.laravel.bootcamp/
+.phpstorm.meta.php
