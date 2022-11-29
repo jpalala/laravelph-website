@@ -12,9 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::mixin(new \Laravel\Ui\AuthRouteMethods());
+Route::auth(['verify' => true]);
 
 Route::get('/', function () {
-    return view('welcome_to_laravelph');
+    return view('welcome');
 });
 
 Auth::routes(['register' => false]);
@@ -25,3 +27,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/team-reg', [App\Http\Controllers\TeamRegController::class, 'register'])->name('team-reg');
 
 Route::post('/team-reg/create', [App\Http\Controllers\TeamRegController::class, 'create'])->name('register');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
