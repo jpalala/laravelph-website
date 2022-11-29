@@ -43,7 +43,8 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\HandleInertiaRequests::class,
             \Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets::class,
-            \App\Domains\Auth\Http\Middleware\ToBeLoggedOut::class,
+	    \App\Domains\Auth\Http\Middleware\ToBeLoggedOut::class,
+	    \App\Http\Middleware\HandleInertiaRequests::class
         ],
 
         'api' => [

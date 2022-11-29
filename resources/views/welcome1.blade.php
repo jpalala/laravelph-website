@@ -17,7 +17,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <!-- Styles -->
-	<link href="css/pure.css" rel="stylesheet" type="text/css" />
+	<link href="css" rel="stylesheet" type="text/css" />
 	<style>
 svg { width: 128px; height: 128px; fill: rgb(30,30,30); }
 	</style>
