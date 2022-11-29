@@ -25,3 +25,7 @@ public/build/*
 bootcamp/
 ph.laravel.bootcamp/
 .phpstorm.meta.php
+
+*.zip
+*.log
+*.txt
