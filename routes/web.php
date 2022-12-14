@@ -16,19 +16,18 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', [
-    \App\Http\Controllers\MainController::class, 'home'
-]);
-  
-// upcoming events/ bootcamps joined (see previous events attended)
-Route::get('/dashboard', [
-	\App\Http\Controllers\MainController::class, 'dashboard'
-])->middleware(['auth', 'verified']) ->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+Route::get('/', function () {
+    return view('welcome_to_laravelph');
 });
+
+//Auth::routes(['register' => false]);
+Route::get('/login',  [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');
+
+
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
+//# Route::get('/testemail', App\Http\Controllers\EmailtestController::class)->name('test-email');
+
+Route::get('/team-reg', [App\Http\Controllers\TeamRegController::class, 'register'])->name('team-reg');
 
 require __DIR__.'/auth.php';
